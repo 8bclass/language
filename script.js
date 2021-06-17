@@ -4,6 +4,8 @@ const form = document.querySelector('.form')
 const info = document.querySelector('.info')
 const remember = document.querySelector('.remember')
 
+localStorage.removeItem("login")
+
 if(localStorage.getItem('login') == 'logged'){
     form.style.display = 'none'
     info.style.display = 'inherit'
