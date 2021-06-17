@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Language</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul class="list">
+                <li><img src="https://image.flaticon.com/icons/png/512/1810/1810702.png" class="nav-logo"><span>Language</span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="login form">
+                <h2 class="login-title">Sign in</h2>
+                <input type="text" placeholder="Username" class="input username"><br>
+                <input type="password" placeholder="Password" class="input password"><br>
+                <input type="checkbox" class="remember"><span>Remember me</span><br><br><br>
+                <input type="submit" onclick="login()" class="submit">
+        </div>
+    </main>
+    <div class="info">
+        <h1>welcome</h1>
+    </div>
 </body>
 </html>
+
+<script src="script.js"></script>
