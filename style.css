@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+nav{
+    background-color: #f5f5f7;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+
+body{
+    animation: fadeNav 4s;
+    background: black;
+}
+/*
+@keyframes fadeNav {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+*/
+
+nav .list li{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.nav-logo{
+    width: 37px;
+    margin-right: 10px;
+}
+
+nav .list li span{
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f5f5f7;
+    background-size: 50%;
+    padding: 25px;
+    height: 380px;
+    width: 450px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.username{
+    margin-bottom: 30px;
+}
+
+.password{
+    margin-bottom: 50px;
+}
+
+.input{
+    width: 250px;
+    height: 35px;
+    padding: 15px;
+    background-color: rgb(242,242,247);
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+}
+
+.submit{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    outline: none;
+}
+
+
+.login-title{
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav{
+        height: 40px;
+    }
+    .nav-logo{
+        width: 30px;
+        margin-right: 10px;
+    }
+    
+    nav .list li span{
+        font-size: 16px;
+        position: relative;
+        bottom: 8px;
+    }
+
+    .login{
+        height: 300px;
+        width: 320px;
+    }
+
+    .input{
+        width: 210px;
+        height: 35px;
+    }
+
+    .username{
+        margin-bottom: 20px;
+    }
+    
+    .password{
+        margin-bottom: 40px;
+    }
+
+    .submit{
+        width: 130px;
+        height: 35px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        background-color: black;
+        outline: none;
+    }
+
+    .login-title{
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+}
