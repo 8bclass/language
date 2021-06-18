@@ -10,19 +10,20 @@ nav{
     background-color: #f5f5f7;
     height: 60px;
     width: 100%;
-    position: fixed;
+    position: absolute;
 }
 
 body{
     animation: fadeNav 4s;
     background: black;
+    width: 100%;
 }
-
+/*
 @keyframes fadeNav {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
+*/
 
 nav .list li{
     position: absolute;
@@ -104,13 +105,59 @@ nav .list li span{
 }
 
 .info{
-    position: absolute;
-    top: 50px;
+    padding-top: 80px;
+    padding-left: 700px;
     display: none;
 }
 
 .info h1{
     color: white;
+    margin-bottom: 30px;
+}
+.info .search{
+    width: 470px;
+    height: 35px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.info .search-btn{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    width: 25px;
+    position: relative;
+    left: 7px;
+    top: 7px;
+}
+
+.boxes{
+    max-width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.box{
+    background-color: #f5f5f7;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box h2{
+    color: black;
+}
+
+.info .boxes .box h3{
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
@@ -166,5 +213,45 @@ nav .list li span{
         position: relative;
         right: 80px;
         margin-right: -70px;
+    }
+
+    .info .search-btn{
+        -webkit-filter: invert(100%); 
+        filter: invert(100%);
+        width: 25px;
+        position: relative;
+        left: 10px;
+        top: 8px;
+    }
+
+    .info h1{
+        font-size: 27px;
+    }
+
+    .info .search{
+        width: 270px;
+    }
+
+    .info{
+        padding-top: 80px;
+        padding-left: 0px;
+    }
+    
+    .info .first{
+       margin-left: 10%;
+    }
+
+    .illustration{
+        width: 250px;
+        margin-top: -260px;
+        margin-bottom: -110px;
+    }
+
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 }
